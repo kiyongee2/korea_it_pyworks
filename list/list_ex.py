@@ -67,3 +67,25 @@ print()  # 줄바꿈
 for num in numbers:
     if num < 40:
         print(num)
+
+'''
+num=10, 10 < 40(True)  10 출력
+num=40, 40 < 40(False) 40 출력안됨
+num=50, 50 < 40(False) 50 출력안됨
+num=30, 30 < 40(True)  30 출력
+'''
+
+# 음식 분류하기 - 한식, 일식, 중식
+foods = ["비빔밥", "자장면", "초밥", "김치찌게"]
+print(foods)
+
+for food in foods:
+    # 중식 리스트
+    if food in ["자장면", "짬뽕"]:
+        print(f'{food}는(은) 중식입니다.')
+    # 일식 리스트
+    elif food in ["초밥", "우동"]:
+        print(f'{food}는(은) 일식입니다.')
+    # 한식 리스트
+    else:
+        print(f'{food}는(은) 한식입니다.')
