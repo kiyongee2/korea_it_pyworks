@@ -1,6 +1,7 @@
 # 컴퓨터 용어 사전
 # try ~ except 구문을 사용 - 예외 처리
 print("♠ 컴퓨터 용어 사전 ♠")
+print()
 
 try:
     word = input("단어를 입력하세요: ")
