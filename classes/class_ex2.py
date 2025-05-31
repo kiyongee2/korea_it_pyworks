@@ -57,12 +57,12 @@ print(account.__ano)
 # set + 멤버변수(설정자), get + 멤버변수(접근자)
 class BankAccount:
     def __init__(self):
-        self.__ano = ""
+        self.__ano = ""    #private (멤버변수)
         self.__owner = ""
         self.__balance = 0
 
     #계좌 번호 설정(저장)
-    def set_ano(self, ano):
+    def set_ano(self, ano):  #public (메서드)
         self.__ano = ano
 
     # 계좌 번호 가져오기

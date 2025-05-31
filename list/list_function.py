@@ -18,6 +18,7 @@ a.remove(5) # 요소 중 5를 삭제
 print(a) #리스트 출력
 '''
 
+"""
 car = ["Sonata", "BMW", "EV4", "Inoic6"]
 
 # 요소 추가 - "모닝"을 추가
@@ -28,7 +29,6 @@ car.append("모닝")
 car.pop(1)
 
 print(car)
-
 
 # 리스트의 정렬 - sort()
 n = [1, 4, 3, 2]
@@ -60,3 +60,34 @@ for i in a1:
     if (3 * i) < 10:
         a3.append(3 * i)
 print("a3=", a3)
+"""
+
+# 리스트에 리스트 추가
+lis = ['a', 'b']
+# print(lis)
+
+lis.append('c') # 맨 뒤에 추가
+print(lis) #['a', 'b', 'c']
+
+# 'd', 'e' - 2개의 요소 추가 - extend() 사용
+lis.extend(['d', 'e'])
+print(lis) #['a', 'b', 'c', 'd', 'e']
+
+# 리스트 복사 - copy() 사용
+# 원본을 보존하고 복사본을 사용하고 싶을때 활용
+a1 = [1, 2, 3]
+a2 = a1.copy()
+print("a2 =", a2) #[1, 2, 3]
+
+# 요소 수정
+a2[1] = 5
+print("a2 =", a2) #[1, 5, 3]
+
+'''
+a1 = [1, 2, 3]
+a2 = []   #a1을 복사할 빈 리스트 생성
+
+for i in a1:
+    a2.append(i)
+print("a2 =", a2)
+'''
