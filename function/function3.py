@@ -41,3 +41,17 @@ print("더하기:", val)
 val2 = square(4)
 print(f"제곱수: {val2}")
 '''
+
+# 실습 문제
+def my_func(x, y):
+    if x == y:
+        return x + y
+    else: # x != y
+        return x - y
+
+# 호출
+result1 = my_func(8, 8)
+print("result1 =", result1) #16
+
+result2 = my_func(8, 9)
+print("result2 =", result2) #-1

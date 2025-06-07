@@ -1,4 +1,21 @@
 # 클래스 만들기
+class Car:
+    # 모델명, 연식 - 속성
+    # 생성자(필수 요소)
+    def __init__(self, model, year):
+        self.model = model
+        self.year = year
+
+    # 인스턴의 문자열 정보
+    def __str__(self):
+        return f"모델명: {self.model}, 연식: {self.year}"
+    
+if __name__ == "__main__":
+    # Car의 인스턴스(객체) 생성
+    c1 = Car("Ionic6", 2024)
+    print(c1)
+
+
 # 쇼핑몰 장바구니 구현
 class Cart:
     #생성자
@@ -21,14 +38,15 @@ class Cart:
     def __str__(self):
         return f"{self.user}의 장바구니: {self.items}"
 
-# Cart의 인스턴스 생성
-my_cart = Cart("박이슬")
+if __name__ == "__main__":
+    # Cart의 인스턴스 생성
+    my_cart = Cart("박이슬")
 
-# 품목 추가
-my_cart.add("계란", "우유", "쌀")
+    # 품목 추가
+    my_cart.add("계란", "우유", "쌀")
 
-# 품목 삭제
-my_cart.remove("우유")
-my_cart.remove("콩나물")
+    # 품목 삭제
+    my_cart.remove("우유")
+    my_cart.remove("콩나물")
 
-print(my_cart)
+    print(my_cart)
